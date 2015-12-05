@@ -7,7 +7,7 @@ syntax:
 
 `SELECT (udf()).*`
 
-This syntax is undesireable because it is the only way I've found so far to
+This syntax is desireable because it is the only way I've found so far to
 get the postgresql engine to return all of the out parameters together
 as a row, together with the parameters type information, instead of
 returning the out parameters together as the text representation of
@@ -60,4 +60,7 @@ PostgreSQL 9.3.10 on x86_64-unknown-linux-gnu, compiled by gcc (Ubuntu/Linaro 4.
 and
 
  PostgreSQL 9.4.5 on x86_64-unknown-linux-gnu, compiled by gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3, 64-bit
+
+
+Bug has been posted to pg-bugs on 12/5/15 and assigned #13799
 
